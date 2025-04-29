@@ -9,16 +9,16 @@ Currently learning ethical hacking, Active Directory exploitation, and network s
 
 - Computer Science undergraduate at BITS Pilani, Dubai Campus  
 - Currently pursuing the eJPT certification  
-- Learning Red Team techniques through Hack The Box and TCM Academy's PEH course  
+- Learning Red Team techniques through Hack The Box and labs
 - Completed a web development internship at BMS Solutions LLC, Dubai
 
 ---
 
 ## Skills
 
-**Programming Languages:** Python, C, Java, JavaScript, CSS, Lex, Yacc, Assembly, PROLOG  
-**Cybersecurity:** Network Security, Penetration Testing, Cryptography, Privilege Escalation  
-**Tools & Platforms:** Kali Linux, SQL, Wireshark, Cisco Packet Tracer  
+**Programming Languages:** Python, C, Java, JavaScript, CSS, Assembly, PROLOG  
+**Cybersecurity:** Network Security, Penetration Testing, Cryptography, Linux & Windows Privilege Escalation, Active Directory Attacks, Vulnerability Assessment, Web Exploitation  
+**Tools & Platforms:** Kali Linux, SQL, Wireshark, Cisco Packet Tracer, Lex, Yacc, LaTeX  
 **Web Development:** HTML, CSS, JavaScript, Data Flow Diagrams  
 **Soft Skills:** Problem Solving, Team Collaboration, Adaptability, Time Management  
 
@@ -27,7 +27,7 @@ Currently learning ethical hacking, Active Directory exploitation, and network s
 ## Projects & Labs
 
 - Active Directory Lab *(to be documented in a separate repository)*  
-- Hack The Box Writeups *(to be documented in a separate repository)*  
+- Penetration Test Reports — HTB Retired Machines
 - Cryptography in the Protection of Intellectual Property  
 - Crop Prediction using Machine Learning  
 - Compiler Construction Mini-Labs (YACC & LEX) *(to be documented in a separate repository)*  

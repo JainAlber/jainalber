@@ -76,6 +76,7 @@
 ## 📂 Featured Projects  
 - 🔹 [HTB Penetration Test Reports](https://github.com/jainalber/Penetration-Test-Reports---HTB-Retired-Machines)  
 - 🔹 [Computer Networks Lab](https://github.com/jainalber/Computer-Networks-Lab)  
+- 🔹 Federated Learning with NTRU Homomorphic Encryption *(Privacy-preserving FL using NTRU lattice + Raspberry Pi validation)*  
 - 🔹 Cryptography in IP Protection *(Ethereum + Web3.js + Solidity)*  
 - 🔹 Crop Prediction using ML *(RF, SVM, CNN)*  
 

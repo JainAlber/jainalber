@@ -15,52 +15,33 @@
 
 ## ⚒️ Skills  
 
-### 🖥️ Programming  
-<p>
-  <img src="https://skillicons.dev/icons?i=python,java,c,js" height="45" style="margin-right:10px;"/>  
-  <img src="https://img.shields.io/badge/Prolog-darkgreen?style=for-the-badge&logoColor=white" height="28" style="margin-right:10px;"/>  
-  <img src="https://img.shields.io/badge/TASM-red?style=for-the-badge&logoColor=white" height="28" style="margin-right:10px;"/>  
-  <img src="https://img.shields.io/badge/Assembler-grey?style=for-the-badge&logoColor=white" height="28"/>  
-</p>  
+| **Programming** | **Cybersecurity** |
+|-----------------|-------------------|
+| 🟦 Python | 🟥 Network Security |
+| 🟪 Java | 🟧 Penetration Testing |
+| 🟨 C | 🟫 Active Directory |
+| 🟩 JavaScript | 🟨 Web Exploitation |
+| 🟩 Prolog | 🟪 Mobile Pentesting |
+| 🟥 TASM | 🟦 Bash / Scripting |
+| 🟫 Assembler | 🟦 Cryptography |
 
----
+| **Tools & Platforms** | **Web Development** |
+|-----------------------|----------------------|
+| 🟦 Linux | 🟧 HTML5 |
+| 🟥 Git | 🟦 CSS3 |
+| 🟪 GitHub | 🟨 JavaScript |
+| 🟫 VS Code | 🟫 Data Flow Diagrams |
+| 🟧 Kali Linux | 🟩 Visualization |
+| 🟨 Burp Suite | |
+| 🟫 Nmap | |
+| 🟦 Cisco Packet Tracer | |
+| 🟩 Lex & Yacc | |
+| 🟫 LaTeX | |
 
-### 🔒 Cybersecurity  
-![Network Security](https://img.shields.io/badge/Network%20Security-blue?style=for-the-badge)  
-![Penetration Testing](https://img.shields.io/badge/Penetration%20Testing-red?style=for-the-badge)  
-![Active Directory Attacks](https://img.shields.io/badge/Active%20Directory-orange?style=for-the-badge)  
-![Web Exploitation](https://img.shields.io/badge/Web%20Exploitation-yellow?style=for-the-badge)  
-![Mobile Pentesting](https://img.shields.io/badge/Mobile%20Pentesting-purple?style=for-the-badge)  
-
----
-
-### ⚙️ Tools & Platforms  
-<p>
-  <img src="https://skillicons.dev/icons?i=linux,git,github,vscode" height="45" style="margin-right:10px;"/>  
-  <img src="https://img.shields.io/badge/Kali%20Linux-blue?style=for-the-badge&logo=linux&logoColor=white" height="28" style="margin-right:10px;"/>  
-  <img src="https://img.shields.io/badge/Burp%20Suite-orange?style=for-the-badge&logo=burpsuite&logoColor=white" height="28" style="margin-right:10px;"/>  
-  <img src="https://img.shields.io/badge/Nmap-grey?style=for-the-badge" height="28" style="margin-right:10px;"/>  
-  <img src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-blue?style=for-the-badge" height="28" style="margin-right:10px;"/>  
-  <img src="https://img.shields.io/badge/Lex%20%26%20Yacc-green?style=for-the-badge" height="28" style="margin-right:10px;"/>  
-  <img src="https://img.shields.io/badge/LaTeX-grey?style=for-the-badge&logo=latex&logoColor=white" height="28"/>  
-</p>  
-
----
-
-### 🌐 Web Development  
-![HTML5](https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5&logoColor=white)  
-![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white)  
-![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=black)  
-![Data Flow Diagrams](https://img.shields.io/badge/Data%20Flow%20Diagrams-grey?style=for-the-badge)  
-![Visualization](https://img.shields.io/badge/Visualization-gold?style=for-the-badge)  
-
----
-
-### 🧠 Soft Skills  
-![Problem Solving](https://img.shields.io/badge/Problem%20Solving-blue?style=for-the-badge&logoColor=white&height=40)  
-![Team Collaboration](https://img.shields.io/badge/Team%20Collaboration-orange?style=for-the-badge&logoColor=white&height=40)  
-![Adaptability](https://img.shields.io/badge/Adaptability-green?style=for-the-badge&logoColor=white&height=40)  
-![Time Management](https://img.shields.io/badge/Time%20Management-purple?style=for-the-badge&logoColor=white&height=40)  
+| **Soft Skills** | |
+|-----------------|--|
+| 🟦 Problem Solving | 🟧 Team Collaboration |
+| 🟩 Adaptability | 🟪 Time Management |
 
 ---
 

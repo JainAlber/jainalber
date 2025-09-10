@@ -15,36 +15,60 @@
 
 ## ⚒️ Skills  
 
-| **🖥️ Programming** | **🔒 Cybersecurity** |
-|---------------------|----------------------|
-| Python              | Network Security     |
-| Java                | Penetration Testing  |
-| C                   | Active Directory Attacks |
-| JavaScript          | Web Exploitation     |
-| Prolog              | Mobile Pentesting    |
-| TASM                | Bash / Scripting     |
-| Assembler           | Cryptography         |
+<div style="display: flex; justify-content: space-between;">
 
----
+<!-- Left Column -->
+<div>
 
-| **⚙️ Tools & Platforms** | **🌐 Web Development** |
-|---------------------------|-------------------------|
-| Linux                    | HTML5                  |
-| Git / GitHub             | CSS3                   |
-| VS Code                  | JavaScript             |
-| Kali Linux               | Data Flow Diagrams     |
-| Burp Suite               | Visualization          |
-| Nmap                     |                         |
-| Cisco Packet Tracer      |                         |
-| Lex & Yacc               |                         |
-| LaTeX                    |                         |
+### 🖥️ Programming  
+- Python  
+- Java  
+- C  
+- JavaScript  
+- Prolog  
+- TASM  
+- Assembler  
 
----
+### ⚙️ Tools & Platforms  
+- Linux  
+- Git / GitHub  
+- VS Code  
+- Kali Linux  
+- Burp Suite  
+- Nmap  
+- Cisco Packet Tracer  
+- Lex & Yacc  
+- LaTeX  
 
-| **🧠 Soft Skills** | |
-|---------------------|------------------|
-| Problem Solving     | Team Collaboration |
-| Adaptability        | Time Management   |
+</div>
+
+<!-- Right Column -->
+<div>
+
+### 🔒 Cybersecurity  
+- Network Security  
+- Penetration Testing  
+- Active Directory Attacks  
+- Web Exploitation  
+- Mobile Pentesting  
+- Bash / Scripting  
+- Cryptography  
+
+### 🌐 Web Development  
+- HTML5  
+- CSS3  
+- JavaScript  
+- Data Flow Diagrams  
+- Visualization  
+
+### 🧠 Soft Skills  
+- Problem Solving  
+- Team Collaboration  
+- Adaptability  
+- Time Management  
+
+</div>
+</div>
 
 ---
 

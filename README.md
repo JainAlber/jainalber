@@ -8,7 +8,7 @@
 - 🎓 **Computer Science Undergraduate** @ BITS Pilani, Dubai Campus (2022–Present)  
 - 🛡️ Cybersecurity internships in **SOC Operations (Calculus, UAE)** and **VAPT & AI (Aurisec, India)**  
 - 🔍 Focus on **Red Teaming, AD Attacks, Web Exploitation, and Pentesting**  
-- 📜 Preparing for **eJPT, CRTP, OSCP** certifications  
+- 📜 Preparing for **eJPT, eWPT, CompTIA Security+** certifications  
 - 💻 Prior **Web Dev Internship** (BMS Solutions LLC, Dubai)  
 
 ---
@@ -90,8 +90,8 @@
 ![Python 100](https://img.shields.io/badge/Python%20100-TCM-lightgrey)  
 
 **2025 Targets:**  
-![CRTP](https://img.shields.io/badge/CRTP-Red%20Team%20Professional-purple)  
-![OSCP](https://img.shields.io/badge/OSCP-Offensive%20Security-black)  
+![CompTIA Security+](https://img.shields.io/badge/CompTIA-Security%2B-blue)  
+![eWPT](https://img.shields.io/badge/eWPT-Web%20Penetration%20Tester-orange)  
 
 
 ---

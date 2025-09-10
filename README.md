@@ -17,9 +17,11 @@
 
 ### 💻 Programming  
 <p>
-  <img src="https://skillicons.dev/icons?i=python,java,c,js,assembly" />
-  <img src="https://img.shields.io/badge/PROLOG-darkgreen?style=for-the-badge">
-  <img src="https://img.shields.io/badge/TASM-red?style=for-the-badge">
+### 🖥️ Programming
+<p>
+  <img src="https://skillicons.dev/icons?i=python,java,c,js" height="40"/>
+  <img src="https://img.shields.io/badge/Prolog-%23323330.svg?style=for-the-badge&logoColor=white" height="40"/>
+  <img src="https://img.shields.io/badge/TASM-Assembler-red?style=for-the-badge&logoColor=white" height="40"/>
 </p>
 
 ### 🔐 Cybersecurity  
@@ -78,30 +80,6 @@
 ![CRTP](https://img.shields.io/badge/CRTP-Red%20Team%20Professional-purple)  
 ![OSCP](https://img.shields.io/badge/OSCP-Offensive%20Security-black)  
 
----
-
-## 📅 Roadmap  
-
-### 🔹 Phase 2 (Sept ‘22 – Nov ‘23)  
-✅ Create labs (Blue + Red Team)  
-✅ Finish OverTheWire Bandit (Linux)  
-✅ Complete PortSwigger Labs  
-✅ CompTIA Security+ certification  
-✅ 30 HTB + writeups  
-✅ Design Project  
-✅ 10 Cyber/AI projects  
-✅ Update LinkedIn + blogging  
-✅ Start eWPT prep  
-
-### 🔹 Phase 3 (Nov ‘24 – Jan ‘23)  
-✅ Finish Burp Suite certification  
-✅ Learn Python & Bash scripting  
-✅ 10 projects (AI / Cyber / Python / Bash)  
-✅ 20 HTB + writeups  
-✅ Complete eWPT & eMPT certifications  
-✅ Update CV + Portfolio + GitHub  
-✅ Start CRTP prep  
-✅ Apply for internships  
 
 ---
 

@@ -15,37 +15,60 @@
 
 ## ⚒️ Skills  
 
-### 🖥️ Programming & 🔒 Cybersecurity  
-
 <p align="center">
-  <!-- Programming Column -->
-  <div style="display: inline-block; vertical-align: top; margin-right: 40px;">
 
-  <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" height="30"/><br>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" height="30"/><br>
-  <img src="https://img.shields.io/badge/C-444444?style=for-the-badge&logo=c&logoColor=white" height="30"/><br>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="30"/><br>
-  <img src="https://img.shields.io/badge/Prolog-006400?style=for-the-badge" height="30"/><br>
-  <img src="https://img.shields.io/badge/TASM-8B0000?style=for-the-badge" height="30"/><br>
-  <img src="https://img.shields.io/badge/Assembler-5C5C5C?style=for-the-badge" height="30"/>
+<!-- Left Column -->
+<div style="display: inline-block; text-align: left; margin-right: 80px;">
 
-  </div>
+### 🖥️ Programming  
+- Python  
+- Java  
+- C  
+- JavaScript  
+- Prolog  
+- TASM  
+- Assembler  
 
-  <!-- Cybersecurity Column -->
-  <div style="display: inline-block; vertical-align: top;">
+### ⚙️ Tools & Platforms  
+- Linux  
+- Git / GitHub  
+- VS Code  
+- Kali Linux  
+- Burp Suite  
+- Nmap  
+- Cisco Packet Tracer  
+- Lex & Yacc  
+- LaTeX  
 
-  <img src="https://img.shields.io/badge/Network%20Security-0A66C2?style=for-the-badge" height="30"/><br>
-  <img src="https://img.shields.io/badge/Penetration%20Testing-B33A3A?style=for-the-badge" height="30"/><br>
-  <img src="https://img.shields.io/badge/Active%20Directory-D35400?style=for-the-badge" height="30"/><br>
-  <img src="https://img.shields.io/badge/Web%20Exploitation-999900?style=for-the-badge" height="30"/><br>
-  <img src="https://img.shields.io/badge/Mobile%20Pentesting-800080?style=for-the-badge" height="30"/><br>
-  <img src="https://img.shields.io/badge/Bash%20%2F%20Scripting-333333?style=for-the-badge&logo=gnu-bash&logoColor=white" height="30"/><br>
-  <img src="https://img.shields.io/badge/Cryptography-0A66C2?style=for-the-badge" height="30"/>
+</div>
 
-  </div>
+<!-- Right Column -->
+<div style="display: inline-block; text-align: left;">
+
+### 🔒 Cybersecurity  
+- Network Security  
+- Penetration Testing  
+- Active Directory Attacks  
+- Web Exploitation  
+- Mobile Pentesting  
+- Bash / Scripting  
+- Cryptography  
+
+### 🌐 Web Development  
+- HTML5  
+- CSS3  
+- JavaScript  
+- Data Flow Diagrams  
+- Visualization  
+
+### 🧠 Soft Skills  
+- Problem Solving  
+- Team Collaboration  
+- Adaptability  
+- Time Management  
+
+</div>
 </p>
-
-
 
 ---
 

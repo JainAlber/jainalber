@@ -19,9 +19,9 @@
 <p>
 ### 🖥️ Programming
 <p>
-  <img src="https://skillicons.dev/icons?i=python,java,c,js" height="40"/>
-  <img src="https://img.shields.io/badge/Prolog-%23323330.svg?style=for-the-badge&logoColor=white" height="40"/>
-  <img src="https://img.shields.io/badge/TASM-Assembler-red?style=for-the-badge&logoColor=white" height="40"/>
+  <img src="https://skillicons.dev/icons?i=python,java,c,js" height="50"/>
+  <img src="https://img.shields.io/badge/Prolog-%23323330.svg?style=for-the-badge&logoColor=white" height="50"/>
+  <img src="https://img.shields.io/badge/TASM-Assembler-red?style=for-the-badge&logoColor=white" height="50"/>
 </p>
 
 ### 🔐 Cybersecurity  

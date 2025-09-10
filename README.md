@@ -15,60 +15,36 @@
 
 ## ⚒️ Skills  
 
-<p align="center">
+| **🖥️ Programming** | **🔒 Cybersecurity** |
+|---------------------|----------------------|
+| Python              | Network Security     |
+| Java                | Penetration Testing  |
+| C                   | Active Directory Attacks |
+| JavaScript          | Web Exploitation     |
+| Prolog              | Mobile Pentesting    |
+| TASM                | Bash / Scripting     |
+| Assembler           | Cryptography         |
 
-<!-- Left Column -->
-<div style="display: inline-block; text-align: left; margin-right: 80px;">
+---
 
-### 🖥️ Programming  
-- Python  
-- Java  
-- C  
-- JavaScript  
-- Prolog  
-- TASM  
-- Assembler  
+| **⚙️ Tools & Platforms** | **🌐 Web Development** |
+|---------------------------|-------------------------|
+| Linux                    | HTML5                  |
+| Git / GitHub             | CSS3                   |
+| VS Code                  | JavaScript             |
+| Kali Linux               | Data Flow Diagrams     |
+| Burp Suite               | Visualization          |
+| Nmap                     |                         |
+| Cisco Packet Tracer      |                         |
+| Lex & Yacc               |                         |
+| LaTeX                    |                         |
 
-### ⚙️ Tools & Platforms  
-- Linux  
-- Git / GitHub  
-- VS Code  
-- Kali Linux  
-- Burp Suite  
-- Nmap  
-- Cisco Packet Tracer  
-- Lex & Yacc  
-- LaTeX  
+---
 
-</div>
-
-<!-- Right Column -->
-<div style="display: inline-block; text-align: left;">
-
-### 🔒 Cybersecurity  
-- Network Security  
-- Penetration Testing  
-- Active Directory Attacks  
-- Web Exploitation  
-- Mobile Pentesting  
-- Bash / Scripting  
-- Cryptography  
-
-### 🌐 Web Development  
-- HTML5  
-- CSS3  
-- JavaScript  
-- Data Flow Diagrams  
-- Visualization  
-
-### 🧠 Soft Skills  
-- Problem Solving  
-- Team Collaboration  
-- Adaptability  
-- Time Management  
-
-</div>
-</p>
+| **🧠 Soft Skills** | |
+|---------------------|------------------|
+| Problem Solving     | Team Collaboration |
+| Adaptability        | Time Management   |
 
 ---
 

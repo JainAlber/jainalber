@@ -13,50 +13,54 @@
 
 ---
 
-## 🛠️ Skills  
+## ⚒️ Skills  
 
-### 💻 Programming  
+### 🖥️ Programming  
 <p>
-### 🖥️ Programming
-<p>
-  <img src="https://skillicons.dev/icons?i=python,java,c,js" height="50"/>
-  <img src="https://img.shields.io/badge/Prolog-%23323330.svg?style=for-the-badge&logoColor=white" height="50"/>
-  <img src="https://img.shields.io/badge/TASM-Assembler-red?style=for-the-badge&logoColor=white" height="50"/>
-</p>
+  <img src="https://skillicons.dev/icons?i=python,java,c,js" height="45" style="margin-right:10px;"/>  
+  <img src="https://img.shields.io/badge/Prolog-darkgreen?style=for-the-badge&logoColor=white" height="28" style="margin-right:10px;"/>  
+  <img src="https://img.shields.io/badge/TASM-red?style=for-the-badge&logoColor=white" height="28" style="margin-right:10px;"/>  
+  <img src="https://img.shields.io/badge/Assembler-grey?style=for-the-badge&logoColor=white" height="28"/>  
+</p>  
 
-### 🔐 Cybersecurity  
-<p>
-  <img src="https://img.shields.io/badge/Network%20Security-90%25-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Penetration%20Testing-85%25-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Active%20Directory%20Attacks-80%25-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Web%20Exploitation-85%25-yellow?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Mobile%20Pentesting-75%25-purple?style=for-the-badge">
-</p>
+---
+
+### 🔒 Cybersecurity  
+![Network Security](https://img.shields.io/badge/Network%20Security-blue?style=for-the-badge)  
+![Penetration Testing](https://img.shields.io/badge/Penetration%20Testing-red?style=for-the-badge)  
+![Active Directory Attacks](https://img.shields.io/badge/Active%20Directory-orange?style=for-the-badge)  
+![Web Exploitation](https://img.shields.io/badge/Web%20Exploitation-yellow?style=for-the-badge)  
+![Mobile Pentesting](https://img.shields.io/badge/Mobile%20Pentesting-purple?style=for-the-badge)  
+
+---
 
 ### ⚙️ Tools & Platforms  
 <p>
-  <img src="https://skillicons.dev/icons?i=linux,wireshark,git,github,mysql,vscode" />
-  <img src="https://img.shields.io/badge/Kali%20Linux-blue?style=for-the-badge&logo=linux">
-  <img src="https://img.shields.io/badge/Burp%20Suite-orange?style=for-the-badge&logo=burpsuite">
-  <img src="https://img.shields.io/badge/Nmap-grey?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Lex%20%26%20Yacc-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/LaTeX-lightgrey?style=for-the-badge">
-</p>
+  <img src="https://skillicons.dev/icons?i=linux,git,github,vscode" height="45" style="margin-right:10px;"/>  
+  <img src="https://img.shields.io/badge/Kali%20Linux-blue?style=for-the-badge&logo=linux&logoColor=white" height="28" style="margin-right:10px;"/>  
+  <img src="https://img.shields.io/badge/Burp%20Suite-orange?style=for-the-badge&logo=burpsuite&logoColor=white" height="28" style="margin-right:10px;"/>  
+  <img src="https://img.shields.io/badge/Nmap-grey?style=for-the-badge" height="28" style="margin-right:10px;"/>  
+  <img src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-blue?style=for-the-badge" height="28" style="margin-right:10px;"/>  
+  <img src="https://img.shields.io/badge/Lex%20%26%20Yacc-green?style=for-the-badge" height="28" style="margin-right:10px;"/>  
+  <img src="https://img.shields.io/badge/LaTeX-grey?style=for-the-badge&logo=latex&logoColor=white" height="28"/>  
+</p>  
+
+---
 
 ### 🌐 Web Development  
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js" />
-  <img src="https://img.shields.io/badge/Data%20Flow%20Diagrams-Visualization-yellow?style=for-the-badge">
-</p>
+![HTML5](https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white)  
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=black)  
+![Data Flow Diagrams](https://img.shields.io/badge/Data%20Flow%20Diagrams-grey?style=for-the-badge)  
+![Visualization](https://img.shields.io/badge/Visualization-gold?style=for-the-badge)  
 
-### 🤝 Soft Skills  
-<p>
-  <img src="https://img.shields.io/badge/Problem%20Solving-blue?style=flat-square">
-  <img src="https://img.shields.io/badge/Team%20Collaboration-orange?style=flat-square">
-  <img src="https://img.shields.io/badge/Adaptability-green?style=flat-square">
-  <img src="https://img.shields.io/badge/Time%20Management-purple?style=flat-square">
-</p>
+---
+
+### 🧠 Soft Skills  
+![Problem Solving](https://img.shields.io/badge/Problem%20Solving-blue?style=for-the-badge&logoColor=white&height=40)  
+![Team Collaboration](https://img.shields.io/badge/Team%20Collaboration-orange?style=for-the-badge&logoColor=white&height=40)  
+![Adaptability](https://img.shields.io/badge/Adaptability-green?style=for-the-badge&logoColor=white&height=40)  
+![Time Management](https://img.shields.io/badge/Time%20Management-purple?style=for-the-badge&logoColor=white&height=40)  
 
 ---
 

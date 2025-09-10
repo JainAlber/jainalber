@@ -15,68 +15,36 @@
 
 ## ⚒️ Skills  
 
-### 🖥️ Programming & Cybersecurity  
+### 🖥️ Programming & 🔒 Cybersecurity  
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/Network%20Security-0A66C2?style=for-the-badge" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/Penetration%20Testing-B33A3A?style=for-the-badge" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/C-444444?style=for-the-badge&logo=c&logoColor=white" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/Active%20Directory-D35400?style=for-the-badge" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/Web%20Exploitation-999900?style=for-the-badge" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/Prolog-006400?style=for-the-badge" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/Mobile%20Pentesting-800080?style=for-the-badge" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/TASM-8B0000?style=for-the-badge" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/Bash%20%2F%20Scripting-333333?style=for-the-badge&logo=gnu-bash&logoColor=white" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/Assembler-5C5C5C?style=for-the-badge" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/Cryptography-0A66C2?style=for-the-badge" height="30" hspace="10"/>
-</p>  
+  <!-- Programming Column -->
+  <div style="display: inline-block; vertical-align: top; margin-right: 40px;">
 
----
+  <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" height="30"/><br>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" height="30"/><br>
+  <img src="https://img.shields.io/badge/C-444444?style=for-the-badge&logo=c&logoColor=white" height="30"/><br>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="30"/><br>
+  <img src="https://img.shields.io/badge/Prolog-006400?style=for-the-badge" height="30"/><br>
+  <img src="https://img.shields.io/badge/TASM-8B0000?style=for-the-badge" height="30"/><br>
+  <img src="https://img.shields.io/badge/Assembler-5C5C5C?style=for-the-badge" height="30"/>
 
-### ⚙️ Tools & 🌐 Web Development  
-<p align="center">
-  <img src="https://img.shields.io/badge/Linux-111111?style=for-the-badge&logo=linux&logoColor=white" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/Data%20Flow%20Diagrams-333333?style=for-the-badge" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/Kali%20Linux-268BEE?style=for-the-badge&logo=kalilinux&logoColor=white" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/Visualization-444444?style=for-the-badge" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/Burp%20Suite-FF6F00?style=for-the-badge&logo=burpsuite&logoColor=white" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/Nmap-2C2C2C?style=for-the-badge" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-00599C?style=for-the-badge" height="30" hspace="10"/>
-  <img src="https://img.shields.io/badge/Lex%20%26%20Yacc-228B22?style=for-the-badge" height="30" hspace="10"/>
-  <br>
-  <img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" height="30" hspace="10"/>
-</p>  
+  </div>
 
----
+  <!-- Cybersecurity Column -->
+  <div style="display: inline-block; vertical-align: top;">
 
-### 🧠 Soft Skills  
-<p align="center">
-  <img src="https://img.shields.io/badge/Problem%20Solving-004080?style=for-the-badge" height="35" hspace="12"/>
-  <img src="https://img.shields.io/badge/Team%20Collaboration-993333?style=for-the-badge" height="35" hspace="12"/>
-  <br>
-  <img src="https://img.shields.io/badge/Adaptability-228B22?style=for-the-badge" height="35" hspace="12"/>
-  <img src="https://img.shields.io/badge/Time%20Management-663399?style=for-the-badge" height="35" hspace="12"/>
-</p>  
+  <img src="https://img.shields.io/badge/Network%20Security-0A66C2?style=for-the-badge" height="30"/><br>
+  <img src="https://img.shields.io/badge/Penetration%20Testing-B33A3A?style=for-the-badge" height="30"/><br>
+  <img src="https://img.shields.io/badge/Active%20Directory-D35400?style=for-the-badge" height="30"/><br>
+  <img src="https://img.shields.io/badge/Web%20Exploitation-999900?style=for-the-badge" height="30"/><br>
+  <img src="https://img.shields.io/badge/Mobile%20Pentesting-800080?style=for-the-badge" height="30"/><br>
+  <img src="https://img.shields.io/badge/Bash%20%2F%20Scripting-333333?style=for-the-badge&logo=gnu-bash&logoColor=white" height="30"/><br>
+  <img src="https://img.shields.io/badge/Cryptography-0A66C2?style=for-the-badge" height="30"/>
+
+  </div>
+</p>
+
 
 
 ---

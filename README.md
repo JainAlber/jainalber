@@ -1,5 +1,4 @@
 <!-- Header -->
-<div align="center">
 
 ```
 

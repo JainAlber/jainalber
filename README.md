@@ -1,20 +1,11 @@
-<!-- Header -->
+<div align="center">
 
-```
-
-██████████████████████████████████████████████████████
-█                                                    █
-█         J A I N   P R A S A D   A L B E R          █
-█           Cybersecurity × AI Engineering           █
-█                                                    █
-██████████████████████████████████████████████████████
-```
+<h1>J A I N &nbsp; P R A S A D &nbsp; A L B E R</h1>
+<p><code>Cybersecurity × AI Engineering</code></p>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=18&duration=3500&pause=1000&color=00FF9C&center=true&vCenter=true&width=600&lines=AI-Powered+Intrusion+Detection;Privacy-Preserving+Federated+Learning;Hybrid+Threat+Intelligence+Systems;SOC+%7C+VAPT+%7C+Red+Teaming)](https://git.io/typing-svg)
 
 </div>
-
----
 
 ## `> whoami`
 

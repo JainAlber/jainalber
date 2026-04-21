@@ -7,7 +7,7 @@
 
 </div>
 
-## `> whoami`
+## `> Whoami`
 
 ```python
 profile = {
@@ -21,7 +21,7 @@ profile = {
 
 ---
 
-## `> ls ./projects`
+## `> Projects`
 
 ### 🔴 [AuraNet — Real-Time Network Intrusion Detection](https://github.com/jainalber/AuraNet) *(Ongoing)*
 > XGBoost-powered IDS trained on NSL-KDD · **99.72% accuracy** · FastAPI backend · SOC-style Streamlit dashboard · Optuna hyperparameter tuning · Custom `network_intensity` feature engineering
@@ -37,7 +37,7 @@ profile = {
 
 ---
 
-## `> cat skills.txt`
+## `> Skills`
 
 **Languages**
 
@@ -65,7 +65,7 @@ profile = {
 
 ---
 
-## `> cat certs.txt`
+## `> Certifications & Courses`
 
 | Status | Certification |
 |--------|--------------|
@@ -75,7 +75,7 @@ profile = {
 
 ---
 
-## `> stats`
+## `> Stats`
 
 <div align="center">
 
@@ -88,7 +88,7 @@ profile = {
 
 ---
 
-## `> connect`
+## `> Connect`
 
 <div align="center">
 

@@ -1,16 +1,6 @@
-<!-- Header -->
 <div align="center">
 
-```
-██████████████████████████████████████████████████████
-█                                                    █
-█   J A I N   P R A S A D   A L B E R                █
-█   Cybersecurity × AI                               █
-█                                                    █
-██████████████████████████████████████████████████████
-```
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=18&duration=3500&pause=1000&color=00FF9C&center=true&vCenter=true&width=600&lines=AI-Powered+Intrusion+Detection;Privacy-Preserving+Federated+Learning;Hybrid+Threat+Intelligence+Systems;SOC+%7C+VAPT+%7C+Red+Teaming)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=20&duration=3500&pause=1000&color=00FF9C&center=true&vCenter=true&width=650&lines=AI-Powered+Intrusion+Detection;Privacy-Preserving+Federated+Learning;Hybrid+Threat+Intelligence+Systems;SOC+%7C+VAPT+%7C+Red+Teaming)](https://git.io/typing-svg)
 
 </div>
 
@@ -25,7 +15,6 @@ profile = {
     "current"   : "AI & Global Digital Operations Intern @ TÜV Rheinland Middle East",
     "focus"     : ["AI-driven Cybersecurity", "Threat Detection", "Privacy-Preserving ML"],
     "building"  : ["AuraNet — Real-Time IDS (Ongoing)", "SentinelLog AI"],
-    "certs"     : ["eJPT (In Progress)", "TCM Practical Ethical Hacking"],
 }
 ```
 
@@ -33,18 +22,17 @@ profile = {
 
 ## `> ls ./projects`
 
-### 🔴 AuraNet — Real-Time Network Intrusion Detection *(Ongoing)*
+### 🔴 [AuraNet — Real-Time Network Intrusion Detection](https://github.com/jainalber/AuraNet) *(Ongoing)*
 > XGBoost-powered IDS trained on NSL-KDD · **99.72% accuracy** · FastAPI backend · SOC-style Streamlit dashboard · Optuna hyperparameter tuning · Custom `network_intensity` feature engineering
 
-### 🟣 SentinelLog AI — Hybrid Threat Intelligence Dashboard
+### 🟣 [SentinelLog AI — Hybrid Threat Intelligence Dashboard](https://github.com/jainalber/SetinelLog-AI)
 > Deterministic rules engine (brute force, geo-shift, privilege escalation) + **Llama 3.1 via Groq** for AI-driven remediation · Python · Pandas · Streamlit
 
-### 🔵 NTRU Federated Learning — Post-Quantum Privacy
+### 🔵 NTRU Federated Learning — Post-Quantum Privacy *(repo coming soon)*
 > Privacy-preserving FL with **NTRU lattice-based homomorphic encryption** · Clients encrypt weight deltas, server aggregates without decryption · Validated on physical **Raspberry Pi** hardware · SymPy · scikit-learn · Flask
 
-### 📋 HTB Penetration Test Reports
+### 📋 [HTB Penetration Test Reports](https://github.com/jainalber/Penetration-Test-Reports---HTB-Retired-Machines)
 > Professional-format pentest reports for retired HackTheBox machines
-> → [View Reports](https://github.com/jainalber/Penetration-Test-Reports---HTB-Retired-Machines)
 
 ---
 
@@ -76,16 +64,13 @@ profile = {
 
 ---
 
-## `> cat certs_and_goals.txt`
+## `> cat certs.txt`
 
 | Status | Certification |
 |--------|--------------|
-| 🟡 In Progress | eJPT — eLearnSecurity Junior Penetration Tester |
 | ✅ Completed | TCM Security — Practical Ethical Hacking (PEH) |
 | ✅ Completed | TCM Security — Linux 100 |
 | ✅ Completed | TCM Security — Python 100 |
-| 🎯 Target | eWPT — Web Penetration Tester |
-| 🎯 Target | CompTIA Security+ |
 
 ---
 
@@ -114,7 +99,5 @@ profile = {
 ---
 
 <div align="center">
-<sub>
 <code>// always learning. always building.</code>
-</sub>
 </div>

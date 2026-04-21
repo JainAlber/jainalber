@@ -1,117 +1,120 @@
-# 👋 Hi, I'm Jain Prasad Alber  
+<!-- Header -->
+<div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=4000&pause=1000&color=FF79C6&width=600&lines=Aspiring+Cybersecurity+Specialist;Purple+Team+Enthusiast;SOC+%7C+VAPT+%7C+Red+Teaming;Always+learning+new+skills!)](https://git.io/typing-svg)
+```
+██████████████████████████████████████████████████████
+█                                                    █
+█   J A I N   P R A S A D   A L B E R              █
+█   Cybersecurity × AI Engineering                  █
+█                                                    █
+██████████████████████████████████████████████████████
+```
 
----
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=18&duration=3500&pause=1000&color=00FF9C&center=true&vCenter=true&width=600&lines=AI-Powered+Intrusion+Detection;Privacy-Preserving+Federated+Learning;Hybrid+Threat+Intelligence+Systems;SOC+%7C+VAPT+%7C+Red+Teaming)](https://git.io/typing-svg)
 
-## 🚀 About Me
-- 🎓 **Computer Science Undergraduate** @ BITS Pilani, Dubai Campus (2022–Present)  
-- 🛡️ Cybersecurity internships in **SOC Operations (Calculus, UAE)** and **VAPT & AI (Aurisec, India)**  
-- 🔍 Focus on **Red Teaming, AD Attacks, Web Exploitation, and Pentesting**  
-- 📜 Preparing for **eJPT, eWPT, CompTIA Security+** certifications  
-- 💻 Prior **Web Dev Internship** (BMS Solutions LLC, Dubai)  
-
----
-
-## ⚒️ Skills  
-
-### 🖥️ Programming  
-<p>
-  <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/C-444444?style=for-the-badge&logo=c&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="30"/>
-  <img src="https://img.shields.io/badge/Prolog-006400?style=for-the-badge" height="30"/>
-  <img src="https://img.shields.io/badge/TASM-8B0000?style=for-the-badge" height="30"/>
-  <img src="https://img.shields.io/badge/Assembler-5C5C5C?style=for-the-badge" height="30"/>
-</p>
+</div>
 
 ---
 
-### 🔒 Cybersecurity  
-<p>
-  <img src="https://img.shields.io/badge/Network%20Security-0A66C2?style=for-the-badge" height="30"/>
-  <img src="https://img.shields.io/badge/Penetration%20Testing-B33A3A?style=for-the-badge" height="30"/>
-  <img src="https://img.shields.io/badge/Active%20Directory-D35400?style=for-the-badge" height="30"/>
-  <img src="https://img.shields.io/badge/Web%20Exploitation-999900?style=for-the-badge" height="30"/>
-  <img src="https://img.shields.io/badge/Mobile%20Pentesting-800080?style=for-the-badge" height="30"/>
-  <img src="https://img.shields.io/badge/Bash%20%2F%20Scripting-333333?style=for-the-badge&logo=gnu-bash&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/Cryptography-008080?style=for-the-badge" height="30"/>
-</p>
+## `> whoami`
+
+```python
+profile = {
+    "name"      : "Jain Prasad Alber",
+    "degree"    : "B.E. Computer Science @ BITS Pilani Dubai (2022–Present)",
+    "current"   : "AI & Global Digital Operations Intern @ TÜV Rheinland Middle East",
+    "focus"     : ["AI-driven Cybersecurity", "Threat Detection", "Privacy-Preserving ML"],
+    "building"  : ["AuraNet — Real-Time IDS (Ongoing)", "SentinelLog AI"],
+    "certs"     : ["eJPT (In Progress)", "TCM Practical Ethical Hacking"],
+}
+```
 
 ---
 
-### 🌐 Web Development  
-<p>
-  <img src="https://img.shields.io/badge/Linux-111111?style=for-the-badge&logo=linux&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/Kali%20Linux-268BEE?style=for-the-badge&logo=kalilinux&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/Burp%20Suite-FF6F00?style=for-the-badge&logo=burpsuite&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/Nmap-2C2C2C?style=for-the-badge" height="30"/>
-  <img src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-00599C?style=for-the-badge" height="30"/>
-  <img src="https://img.shields.io/badge/Lex%20%26%20Yacc-228B22?style=for-the-badge" height="30"/>
-  <img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" height="30"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="30"/>
-  <img src="https://img.shields.io/badge/Data%20Flow%20Diagrams-444444?style=for-the-badge" height="30"/>
-  <img src="https://img.shields.io/badge/Visualization-666666?style=for-the-badge" height="30"/>
-</p>
+## `> ls ./projects`
+
+### 🔴 AuraNet — Real-Time Network Intrusion Detection *(Ongoing)*
+> XGBoost-powered IDS trained on NSL-KDD · **99.72% accuracy** · FastAPI backend · SOC-style Streamlit dashboard · Optuna hyperparameter tuning · Custom `network_intensity` feature engineering
+
+### 🟣 SentinelLog AI — Hybrid Threat Intelligence Dashboard
+> Deterministic rules engine (brute force, geo-shift, privilege escalation) + **Llama 3.1 via Groq** for AI-driven remediation · Python · Pandas · Streamlit
+
+### 🔵 NTRU Federated Learning — Post-Quantum Privacy
+> Privacy-preserving FL with **NTRU lattice-based homomorphic encryption** · Clients encrypt weight deltas, server aggregates without decryption · Validated on physical **Raspberry Pi** hardware · SymPy · scikit-learn · Flask
+
+### 📋 HTB Penetration Test Reports
+> Professional-format pentest reports for retired HackTheBox machines
+> → [View Reports](https://github.com/jainalber/Penetration-Test-Reports---HTB-Retired-Machines)
 
 ---
 
-### 🧠 Soft Skills  
-<p>
-  <img src="https://img.shields.io/badge/Problem%20Solving-004080?style=for-the-badge" height="35"/>
-  <img src="https://img.shields.io/badge/Team%20Collaboration-993333?style=for-the-badge" height="35"/>
-  <img src="https://img.shields.io/badge/Adaptability-228B22?style=for-the-badge" height="35"/>
-  <img src="https://img.shields.io/badge/Time%20Management-663399?style=for-the-badge" height="35"/>
-</p>
+## `> cat skills.txt`
 
+**Languages**
 
----
+![Python](https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=00FF9C)
+![JavaScript](https://img.shields.io/badge/JavaScript-0D1117?style=flat-square&logo=javascript&logoColor=00FF9C)
+![Java](https://img.shields.io/badge/Java-0D1117?style=flat-square&logo=openjdk&logoColor=00FF9C)
+![C](https://img.shields.io/badge/C-0D1117?style=flat-square&logo=c&logoColor=00FF9C)
+![Assembly](https://img.shields.io/badge/Assembly-0D1117?style=flat-square&logoColor=00FF9C)
 
-## 📂 Featured Projects  
-- 🔹 [HTB Penetration Test Reports](https://github.com/jainalber/Penetration-Test-Reports---HTB-Retired-Machines)  
-- 🔹 [Computer Networks Lab](https://github.com/jainalber/Computer-Networks-Lab)  
-- 🔹 Federated Learning with NTRU Homomorphic Encryption *(Privacy-preserving FL using NTRU lattice + Raspberry Pi validation)*  
-- 🔹 Cryptography in IP Protection *(Ethereum + Web3.js + Solidity)*  
-- 🔹 Crop Prediction using ML *(RF, SVM, CNN)*  
+**AI / ML**
 
----
+![XGBoost](https://img.shields.io/badge/XGBoost-0D1117?style=flat-square&logoColor=FF6EC7)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-0D1117?style=flat-square&logo=scikitlearn&logoColor=FF6EC7)
+![PyTorch](https://img.shields.io/badge/PyTorch-0D1117?style=flat-square&logo=pytorch&logoColor=FF6EC7)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-0D1117?style=flat-square&logo=tensorflow&logoColor=FF6EC7)
+![FastAPI](https://img.shields.io/badge/FastAPI-0D1117?style=flat-square&logo=fastapi&logoColor=FF6EC7)
+![Streamlit](https://img.shields.io/badge/Streamlit-0D1117?style=flat-square&logo=streamlit&logoColor=FF6EC7)
 
-## 🏆 Certifications & Goals  
+**Cybersecurity**
 
-**Current:**  
-![eJPT](https://img.shields.io/badge/eJPT-In%20Progress-blue)  
-![PEH](https://img.shields.io/badge/Practical%20Ethical%20Hacking-TCM-red)  
-![Linux 100](https://img.shields.io/badge/Linux%20100-TCM-lightgrey)  
-![Python 100](https://img.shields.io/badge/Python%20100-TCM-lightgrey)  
-
-**2025 Targets:**  
-![CompTIA Security+](https://img.shields.io/badge/CompTIA-Security%2B-blue)  
-![eWPT](https://img.shields.io/badge/eWPT-Web%20Penetration%20Tester-orange)  
-
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-0D1117?style=flat-square&logo=kalilinux&logoColor=BD93F9)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-0D1117?style=flat-square&logo=burpsuite&logoColor=BD93F9)
+![Nmap](https://img.shields.io/badge/Nmap-0D1117?style=flat-square&logoColor=BD93F9)
+![Wireshark](https://img.shields.io/badge/Wireshark-0D1117?style=flat-square&logo=wireshark&logoColor=BD93F9)
 
 ---
 
-## 📊 GitHub Analytics  
+## `> cat certs_and_goals.txt`
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=jainalber&theme=react-dark&hide_border=true)  
-
-![trophy](https://github-profile-trophy.vercel.app/?username=jainalber&theme=radical&margin-w=10&margin-h=10&column=7)  
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jainalber&show_icons=true&theme=radical)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jainalber&layout=compact&theme=radical)  
-![Streak](https://github-readme-streak-stats.herokuapp.com/?user=jainalber&theme=radical)  
+| Status | Certification |
+|--------|--------------|
+| 🟡 In Progress | eJPT — eLearnSecurity Junior Penetration Tester |
+| ✅ Completed | TCM Security — Practical Ethical Hacking (PEH) |
+| ✅ Completed | TCM Security — Linux 100 |
+| ✅ Completed | TCM Security — Python 100 |
+| 🎯 Target | eWPT — Web Penetration Tester |
+| 🎯 Target | CompTIA Security+ |
 
 ---
 
-## 🤝 Connect With Me  
+## `> stats`
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?logo=linkedin)](https://linkedin.com/in/jain-prasad-alber)  
-📧 **jainprasadaber2004@gmail.com**  
-📱 **+971506543302**  
+<div align="center">
 
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jainalber&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FF9C&icon_color=BD93F9&text_color=FFFFFF)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jainalber&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FF9C&text_color=FFFFFF)
+
+![Streak](https://github-readme-streak-stats.herokuapp.com/?user=jainalber&theme=tokyonight&hide_border=true&background=0D1117&ring=00FF9C&fire=FF6EC7&currStreakLabel=00FF9C)
+
+</div>
+
+---
+
+## `> connect`
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=00FF9C)](https://linkedin.com/in/jain-prasad-alber)
+[![Email](https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=FF6EC7)](mailto:jainprasadalber2004@gmail.com)
+
+</div>
+
+---
+
+<div align="center">
+<sub>
+<code>// always learning. always building.</code>
+</sub>
+</div>

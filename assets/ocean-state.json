@@ -1,0 +1,144 @@
+{
+  "generated": "2026-06-11T17:54:45.932640+00:00",
+  "total_commits": 59,
+  "streak": null,
+  "open_prs": 1,
+  "lang_age": {
+    "JavaScript": 15,
+    "CSS": 15,
+    "Python": 15
+  },
+  "tool_age": {
+    "next": 15,
+    "react": 15,
+    "react-dom": 15,
+    "tailwindcss": 15,
+    "rich": 15,
+    "beautifulsoup4": 36,
+    "requests": 36,
+    "fastapi": 52,
+    "httpx": 52,
+    "matplotlib": 52,
+    "numpy": 52,
+    "pandas": 52,
+    "plotly": 52,
+    "scikit-learn": 52,
+    "seaborn": 52,
+    "streamlit": 52,
+    "uvicorn": 52,
+    "xgboost": 52
+  },
+  "repos": [
+    {
+      "name": "newsly",
+      "pushed_at": "2026-05-27T10:08:58+00:00",
+      "commits": 0,
+      "languages": {
+        "JavaScript": 7885,
+        "CSS": 59
+      },
+      "deps": [
+        "autoprefixer",
+        "groq-sdk",
+        "next",
+        "postcss",
+        "react",
+        "react-dom",
+        "rss-parser",
+        "tailwindcss"
+      ],
+      "has_docker": false
+    },
+    {
+      "name": "vizhi",
+      "pushed_at": "2026-05-26T19:32:49+00:00",
+      "commits": 0,
+      "languages": {
+        "Python": 43599
+      },
+      "deps": [
+        "rich"
+      ],
+      "has_docker": false
+    },
+    {
+      "name": "deriv_assessment",
+      "pushed_at": "2026-05-06T02:41:35+00:00",
+      "commits": 0,
+      "languages": {
+        "Python": 55603
+      },
+      "deps": [
+        "beautifulsoup4",
+        "groq",
+        "python-dotenv",
+        "requests"
+      ],
+      "has_docker": false
+    },
+    {
+      "name": "jainalber",
+      "pushed_at": "2026-04-21T14:21:40+00:00",
+      "commits": 30,
+      "languages": {},
+      "deps": [],
+      "has_docker": false
+    },
+    {
+      "name": "AuraNet",
+      "pushed_at": "2026-04-19T21:37:24+00:00",
+      "commits": 2,
+      "languages": {
+        "Python": 87499
+      },
+      "deps": [
+        "fastapi",
+        "httpx",
+        "joblib",
+        "matplotlib",
+        "numpy",
+        "optuna",
+        "pandas",
+        "plotly",
+        "scikit-learn",
+        "seaborn",
+        "streamlit",
+        "uvicorn",
+        "xgboost"
+      ],
+      "has_docker": false
+    },
+    {
+      "name": "SetinelLog-AI",
+      "pushed_at": "2026-04-19T15:52:50+00:00",
+      "commits": 3,
+      "languages": {
+        "Python": 9725
+      },
+      "deps": [
+        "groq",
+        "pandas",
+        "plotly",
+        "python-dotenv",
+        "streamlit"
+      ],
+      "has_docker": false
+    },
+    {
+      "name": "Penetration-Test-Reports---HTB-Retired-Machines",
+      "pushed_at": "2025-04-28T11:30:05+00:00",
+      "commits": 8,
+      "languages": {},
+      "deps": [],
+      "has_docker": false
+    },
+    {
+      "name": "Computer-Networks-Lab",
+      "pushed_at": "2025-04-10T09:10:46+00:00",
+      "commits": 16,
+      "languages": {},
+      "deps": [],
+      "has_docker": false
+    }
+  ]
+}

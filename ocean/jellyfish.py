@@ -49,24 +49,23 @@ def _jelly(x, y, r, color, opacity, glow, label, delay) -> str:
 
 
 def render_field(lang_age: dict, tool_age: dict, width: int, y_top: int) -> str:
-    """Lay jellies out in three depth rows by freshness bucket."""
+    """One compact strip: fresher tech floats higher and glows brighter,
+    stale tech sinks a step lower and fades."""
     langs = sorted(lang_age.items(), key=lambda kv: kv[1])[:MAX_LANGS]
     tools = sorted(tool_age.items(), key=lambda kv: kv[1])[:MAX_TOOLS]
     items = ([(n, a, True) for n, a in langs] + [(n, a, False) for n, a in tools])
-    rows: dict[int, list] = {0: [], 1: [], 2: []}
-    for name, age, is_lang in items:
-        rows[_bucket(age)].append((name, is_lang))
+    items.sort(key=lambda it: it[1])
+    if not items:
+        return ""
 
     out = ""
-    row_y = (y_top, y_top + 130, y_top + 250)
-    for b, members in rows.items():
-        if not members:
-            continue
-        n = len(members)
-        for i, (name, is_lang) in enumerate(members):
-            x = width * (i + 1) / (n + 1) + (18 if b == 1 else -12 if b == 2 else 0)
-            y = row_y[b] + 22 * math.sin(i * 1.7)
-            r = (15 if is_lang else 11) - b * 2
-            out += _jelly(x, y, r, BUCKET_COLOR[b], BUCKET_OPACITY[b],
-                          BUCKET_GLOW[b], name, delay=i * 0.7 + b * 0.3)
+    n = len(items)
+    x0, x1 = width * 0.12, width * 0.88
+    for i, (name, age, is_lang) in enumerate(items):
+        b = _bucket(age)
+        x = x0 + (x1 - x0) * (i / max(n - 1, 1))
+        y = y_top + b * 34 + 13 * math.sin(i * 1.9)
+        r = (15 if is_lang else 11) - b * 2
+        out += _jelly(x, y, r, BUCKET_COLOR[b], BUCKET_OPACITY[b],
+                      BUCKET_GLOW[b], name, delay=i * 0.6 + b * 0.3)
     return out

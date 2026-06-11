@@ -37,3 +37,26 @@ jobs:
             git commit -m "🌊 ocean sync: regenerate ecosystem"
             git push
           fi
+
+      # Vercel is connected to JainAlber/ocean-asset and redeploys on push,
+      # so the README's <img> always serves the latest animated scene.
+      - name: Publish SVG to the asset repo (Vercel serves it)
+        env:
+          ASSET_TOKEN: ${{ secrets.OCEAN_ASSET_TOKEN }}
+        run: |
+          if [ -z "$ASSET_TOKEN" ]; then
+            echo "::warning::OCEAN_ASSET_TOKEN secret not set — skipping Vercel asset publish"
+            exit 0
+          fi
+          git clone --depth 1 "https://x-access-token:${ASSET_TOKEN}@github.com/JainAlber/ocean-asset.git" /tmp/ocean-asset
+          cp assets/ocean.svg /tmp/ocean-asset/ocean.svg
+          cd /tmp/ocean-asset
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ocean.svg
+          if git diff --cached --quiet; then
+            echo "asset unchanged — nothing to publish"
+          else
+            git commit -m "🌊 ocean sync: update animated scene"
+            git push
+          fi

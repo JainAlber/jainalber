@@ -4,6 +4,7 @@ Usage: python -m ocean.generate
 Requires GITHUB_TOKEN for streak data; degrades gracefully without it.
 """
 
+import os
 import pathlib
 import sys
 import xml.etree.ElementTree as ET
@@ -13,9 +14,14 @@ from . import fetch, scene
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
 
-README = """<div align="center">
+# Served from Vercel (connected to the ocean-asset repo) so the SVG's CSS
+# animations survive — GitHub freezes styles on repo-hosted SVGs.
+SVG_URL = os.environ.get(
+    "OCEAN_SVG_URL", "https://jainalber-ocean.vercel.app/ocean.svg")
 
-<img src="assets/ocean.svg" alt="A living deep ocean ecosystem: an evolving eastern dragon, repositories swimming as sea creatures, tech-stack jellyfish, and a submersible telemetry cockpit." width="100%" />
+README = f"""<div align="center">
+
+<img src="{SVG_URL}" alt="A living deep ocean ecosystem: an evolving eastern dragon, repositories swimming as sea creatures, tech-stack jellyfish, and a submersible telemetry cockpit." width="100%" />
 
 <sub>🌊 A living ecosystem — the dragon grows with every commit, repos swim at their
 depth, jellyfish glow while their tech stays warm. Regenerated every Sunday by

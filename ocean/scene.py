@@ -1,4 +1,8 @@
-"""Scene composer: one continuous SVG ocean, surface light to abyss."""
+"""Scene composer: one cinematic SVG ocean, surface light to abyss.
+
+Wide 16:9-ish canvas — jellyfish strip up top, dragon center stage,
+cockpit resting on the seafloor, repo creatures patrolling both flanks.
+"""
 
 import math
 import random
@@ -8,7 +12,7 @@ from . import palette as P
 from . import species as sp
 from . import tiers
 
-W, H = 900, 1750
+W, H = 1400, 790
 MAX_REPOS = 10
 
 STYLE = f"""
@@ -26,27 +30,47 @@ STYLE = f"""
   .dlabel  {{ font-size: 13px; fill: {P.TEXT}; letter-spacing: 3px; }}
   .dsub    {{ font-size: 10px; fill: {P.TEXT_DIM}; letter-spacing: 2px; }}
 
-  .swim        {{ animation: swim 9s ease-in-out infinite; }}
+  .swim        {{ animation: swim 8s ease-in-out infinite; }}
   .drift       {{ animation: drift 7s ease-in-out infinite; }}
-  .dragonfloat {{ animation: dfloat 12s ease-in-out infinite; }}
-  .sway        {{ animation: sway 5s ease-in-out infinite; transform-origin: 0 0; }}
+  .dragonfloat {{ animation: dfloat 11s ease-in-out infinite; }}
+  .sway        {{ animation: sway 4.5s ease-in-out infinite; transform-origin: 0 0; }}
   .pulse       {{ animation: pulse 4s ease-in-out infinite; }}
-  .jpulse      {{ animation: jpulse 4.5s ease-in-out infinite; transform-origin: 0 0; }}
+  .jpulse      {{ animation: jpulse 3.8s ease-in-out infinite; transform-origin: 0 0; }}
   .flicker     {{ animation: flicker 2.2s steps(2, start) infinite; }}
   .gaugepulse  {{ animation: pulse 5s ease-in-out infinite; }}
-  .bubble      {{ animation: rise 14s linear infinite; }}
+  .bubble      {{ animation: rise 12s linear infinite; }}
   .ray         {{ animation: raypulse 11s ease-in-out infinite; }}
+  .halopulse   {{ animation: halopulse 9s ease-in-out infinite; }}
+  .snow        {{ animation: snowdrift 17s ease-in-out infinite alternate; }}
 
-  @keyframes swim   {{ 0%,100% {{ transform: translate(0,0); }} 50% {{ transform: translate(14px,-7px); }} }}
-  @keyframes drift  {{ 0%,100% {{ transform: translate(0,0); }} 50% {{ transform: translate(-8px,-16px); }} }}
-  @keyframes dfloat {{ 0%,100% {{ transform: translate(0,0); }} 50% {{ transform: translate(0,-14px); }} }}
-  @keyframes sway   {{ 0%,100% {{ transform: rotate(0deg); }} 50% {{ transform: rotate(6deg); }} }}
+  @keyframes swim {{
+    0%, 100% {{ transform: translate(0, 0) rotate(0deg); }}
+    25%      {{ transform: translate(11px, -7px) rotate(1.6deg); }}
+    55%      {{ transform: translate(20px, 2px) rotate(-1.2deg); }}
+    80%      {{ transform: translate(7px, 7px) rotate(0.7deg); }}
+  }}
+  @keyframes drift {{
+    0%, 100% {{ transform: translate(0, 0); }}
+    33%      {{ transform: translate(-7px, -13px); }}
+    66%      {{ transform: translate(6px, -19px); }}
+  }}
+  @keyframes dfloat {{
+    0%, 100% {{ transform: translate(0, 0) scale(1); }}
+    50%      {{ transform: translate(0, -11px) scale(1.013); }}
+  }}
+  @keyframes sway   {{ 0%,100% {{ transform: rotate(0deg); }} 50% {{ transform: rotate(7deg); }} }}
   @keyframes pulse  {{ 0%,100% {{ opacity: 1; }} 50% {{ opacity: 0.45; }} }}
-  @keyframes jpulse {{ 0%,100% {{ transform: scale(1,1); }} 50% {{ transform: scale(1.08,0.92); }} }}
+  @keyframes jpulse {{
+    0%, 100% {{ transform: scale(1, 1); }}
+    45%      {{ transform: scale(1.10, 0.90) translate(0, 1px); }}
+    60%      {{ transform: scale(0.97, 1.05) translate(0, -2px); }}
+  }}
   @keyframes flicker {{ 0%,100% {{ opacity: 1; }} 50% {{ opacity: 0.2; }} }}
-  @keyframes rise   {{ 0% {{ transform: translateY(0); opacity: 0; }} 8% {{ opacity: 0.5; }}
-                       92% {{ opacity: 0.4; }} 100% {{ transform: translateY(-520px); opacity: 0; }} }}
+  @keyframes rise   {{ 0% {{ transform: translateY(0); opacity: 0; }} 10% {{ opacity: 0.5; }}
+                       90% {{ opacity: 0.4; }} 100% {{ transform: translateY(-320px); opacity: 0; }} }}
   @keyframes raypulse {{ 0%,100% {{ opacity: 0.04; }} 50% {{ opacity: 0.10; }} }}
+  @keyframes halopulse {{ 0%,100% {{ opacity: 0.65; }} 50% {{ opacity: 1; }} }}
+  @keyframes snowdrift {{ from {{ transform: translate(0, 0); }} to {{ transform: translate(-16px, 30px); }} }}
 """
 
 DEFS = f"""
@@ -94,23 +118,37 @@ def _background() -> str:
     rnd = random.Random(42)
     g = f'<rect width="{W}" height="{H}" fill="url(#sea)"/>'
     # surface light rays — heavily blurred so they read as light, not bars
-    for i in range(5):
-        x = 90 + i * 180
-        g += (f'<polygon points="{x},-40 {x + 46},-40 {x + 120},430 {x + 58},430" '
-              f'fill="{P.TEAL_DIM}" class="ray" style="animation-delay:{i * 1.8}s" '
+    for i in range(7):
+        x = 80 + i * 200
+        g += (f'<polygon points="{x},-40 {x + 42},-40 {x + 104},330 {x + 50},330" '
+              f'fill="{P.TEAL_DIM}" class="ray" style="animation-delay:{i * 1.6}s" '
               f'opacity="0.07" filter="url(#blur6)"/>')
-    # marine snow
-    for _ in range(70):
+    # marine snow, drifting
+    for i in range(80):
         x, y = rnd.uniform(0, W), rnd.uniform(0, H)
         g += (f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{rnd.uniform(0.5, 1.4):.1f}" fill="{P.SILVER}" '
-              f'opacity="{rnd.uniform(0.05, 0.25):.2f}"/>')
+              f'opacity="{rnd.uniform(0.05, 0.25):.2f}" class="snow" '
+              f'style="animation-delay:-{rnd.uniform(0, 17):.1f}s"/>')
     # rising bubbles
-    for i in range(12):
+    for i in range(14):
         x = rnd.uniform(30, W - 30)
-        y = rnd.uniform(500, H - 60)
+        y = rnd.uniform(380, H - 60)
         g += (f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{rnd.uniform(1.5, 3.5):.1f}" fill="none" '
               f'stroke="{P.TEAL_DIM}" stroke-width="0.7" class="bubble" '
-              f'style="animation-delay:{i * 1.1:.1f}s"/>')
+              f'style="animation-delay:{i * 0.9:.1f}s"/>')
+    # distant ambient fish schools — depth and life, not data
+    for sx, sy, count, flip, dur in ((340, 268, 7, 1, 0), (1010, 510, 6, -1, 3),
+                                     (560, 640, 5, 1, 6)):
+        school = ""
+        for j in range(count):
+            fx = sx + (j % 4) * 26 + (j // 4) * 13
+            fy = sy + (j % 3) * 11 - (j // 3) * 7
+            school += (f'<path d="M {fx},{fy} q 5,-3 9,0 q -4,3 -9,0 l -4,-3 l 1,3 '
+                       f'l -1,3 Z" fill="{P.SILVER}" opacity="0.14"'
+                       + (f' transform="scale(-1,1) translate({-2 * fx},0)"' if flip == -1 else "")
+                       + '/>')
+        g += (f'<g><g class="swim" style="animation-delay:{dur}s;animation-duration:13s">'
+              f'{school}</g></g>')
     # seafloor hint
     g += (f'<path d="M 0,{H - 26} Q {W * 0.25},{H - 52} {W * 0.5},{H - 30} '
           f'T {W},{H - 38} L {W},{H} L 0,{H} Z" fill="#01030a"/>')
@@ -118,40 +156,31 @@ def _background() -> str:
 
 
 def _repo_creatures(state) -> str:
+    """Two flank lanes, newest near surface, oldest brushing the seafloor."""
     repos = sorted(state.repos, key=lambda r: r.pushed_at, reverse=True)[:MAX_REPOS]
     if not repos:
         return ""
     out = ""
-    # free water between the jellyfish field, the dragon and the cockpit
-    segments = [(300, 430), (760, 850), (1120, 1640)]
-    total = sum(b - a for a, b in segments)
-
-    def slot(t: float) -> float:
-        d = t * total
-        for a, b in segments:
-            if d <= b - a:
-                return a + d
-            d -= b - a
-        return segments[-1][1]
-
+    y0, y1 = 248, 690
     for i, repo in enumerate(repos):
         t = i / max(len(repos) - 1, 1)
-        y = slot(t)
-        x = 165 if i % 2 == 0 else W - 165
+        y = y0 + (y1 - y0) * t
+        x = 160 if i % 2 == 0 else W - 160
         facing = 1 if i % 2 == 0 else -1
         stage = tiers.creature_stage(repo.commits)
         name, base, overlay = sp.resolve_species(repo.scores)
         size = 34 + stage * 9
+        label = repo.name if len(repo.name) <= 24 else repo.name[:22] + "…"
         sub = f"{name} · st{stage} · {repo.commits} commits"
         out += creatures.render_creature(x, y, base, overlay, stage, size,
-                                         repo.name, sub, facing=facing,
+                                         label, sub, facing=facing,
                                          delay=i * 0.9)
     return out
 
 
 def build_svg(state) -> str:
     tier, tier_name, depth_zone = tiers.dragon_tier(state.total_commits)
-    dragon_y = 575
+    dragon_y = 388
 
     svg = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
@@ -159,14 +188,14 @@ def build_svg(state) -> str:
         f'<defs>{DEFS}</defs>',
         f'<style>{STYLE}</style>',
         _background(),
-        f'<text x="{W / 2}" y="58" class="caption" text-anchor="middle">T H E   L I V I N G   D E E P</text>',
-        jellyfish.render_field(state.lang_age, state.tool_age, W, 140),
-        f'<ellipse cx="{W / 2}" cy="{dragon_y}" rx="430" ry="190" fill="url(#dragonHalo)"/>',
+        f'<text x="{W / 2}" y="42" class="caption" text-anchor="middle">T H E   L I V I N G   D E E P</text>',
+        jellyfish.render_field(state.lang_age, state.tool_age, W, 88),
+        f'<ellipse cx="{W / 2}" cy="{dragon_y}" rx="430" ry="165" fill="url(#dragonHalo)" class="halopulse"/>',
         dragon.render_dragon(W / 2, dragon_y, state.total_commits, tier),
-        f'<text x="{W / 2}" y="{dragon_y + 215}" class="dlabel" text-anchor="middle">{tier_name.upper()}</text>',
-        f'<text x="{W / 2}" y="{dragon_y + 233}" class="dsub" text-anchor="middle">'
+        f'<text x="{W / 2}" y="{dragon_y + 158}" class="dlabel" text-anchor="middle">{tier_name.upper()}</text>',
+        f'<text x="{W / 2}" y="{dragon_y + 176}" class="dsub" text-anchor="middle">'
         f'TIER {tier}/10 · {state.total_commits} TOTAL COMMITS</text>',
-        cockpit.render_cockpit((W - 640) / 2, 880, 640, state, tier_name, depth_zone),
+        cockpit.render_cockpit((W - 640) / 2, 582, 640, state, tier_name, depth_zone),
         _repo_creatures(state),
         '</svg>',
     ]

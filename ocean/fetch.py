@@ -29,10 +29,6 @@ class RepoState:
     deps: set = field(default_factory=set)
     has_docker: bool = False
 
-    @property
-    def scores(self) -> dict[str, float]:
-        return detect.category_scores(self.languages, self.deps, self.has_docker)
-
 
 @dataclass
 class OceanState:

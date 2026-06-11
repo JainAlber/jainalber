@@ -24,8 +24,8 @@ INK = "#11142e"          # primordial dragon body
 # UI / cockpit
 PANEL = "#0a0f1e"
 PANEL_EDGE = "#1c2a45"
-TEXT = "#cfe8e6"
-TEXT_DIM = "#5f7a82"
+TEXT = "#e2f4f2"
+TEXT_DIM = "#8fb0ba"
 MONO = "JetBrains Mono, Fira Code, Consolas, monospace"
 
 # Jellyfish bells by freshness bucket

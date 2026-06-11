@@ -12,7 +12,7 @@ from . import palette as P
 # tier -> (length, waves, amplitude, head_width, body_color, accent)
 TIER_GEO = {
     1:  (130, 1.1, 14,  4.0, "#b9c6cb", "#d7e2e5"),
-    2:  (190, 1.4, 20,  5.5, "#9fb3ba", "#c4d4d8"),
+    2:  (190, 1.4, 20,  5.5, "#8fa9c0", "#b9cde0"),
     3:  (260, 1.6, 28,  7.5, "#5f7d85", "#14e0c8"),
     4:  (330, 1.8, 36, 10.0, "#46568f", "#6c7fd8"),
     5:  (410, 2.0, 44, 12.5, "#3a4d9e", "#14e0c8"),
@@ -74,7 +74,8 @@ def _head(hx, hy, w, tier, body, accent):
               f'fill="none" stroke-linecap="round"/>')
     # eye
     er = max(1.2, w * 0.28)
-    eye_col = "#3a4750" if tier <= 2 else accent
+    # t6 Ocean Drake spec calls for glowing blue eyes; otherwise the accent
+    eye_col = "#3a4750" if tier <= 2 else "#5aa0ff" if tier == 6 else accent
     halo = f' filter="url(#glowS)"' if tier >= 3 else ""
     g += f'<circle cx="{hx + w * 0.7:.1f}" cy="{hy - w * 0.35:.1f}" r="{er:.1f}" fill="{eye_col}"{halo} class="pulse"/>'
     # horn nubs (t4) -> antlers (t6) -> crown (t9)
@@ -128,9 +129,9 @@ def render_dragon(cx, cy, total_commits, tier) -> str:
     # body ribbon
     g += f'<path d="{_ribbon(pts, norms, w)}" fill="{body}"/>'
 
-    # scales: faint at t2, proper at t4+
+    # scales: faint at t2, proper at t4+, every scale glowing at t9+
     if tier >= 2:
-        sc_op = 0.25 if tier < 4 else 0.5
+        sc_op = 0.25 if tier < 4 else 0.5 if tier < 9 else 0.85
         sc = ""
         step = 3 if tier >= 6 else 4
         for i in range(8, len(pts) - 4, step):

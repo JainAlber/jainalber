@@ -1,4 +1,5 @@
-"""Tier math: dragon evolution (10 tiers) and per-repo creature stages (3)."""
+"""Tier math: dragon evolution (profile-wide) and per-repo creature
+evolution — both climb the same 10-step commit ladder."""
 
 DRAGON_TIERS = [
     # (min_commits, tier, name, depth_zone)
@@ -14,6 +15,20 @@ DRAGON_TIERS = [
     (1001, 10, "Primordial Shenlong",    "Hadal Zone"),
 ]
 
+REPO_TIERS = [
+    # (min_commits, tier, name)
+    (0,    1,  "Abyssal Fry"),
+    (16,   2,  "Reef Guppy"),
+    (41,   3,  "Neon Tang"),
+    (81,   4,  "Coral Hunter"),
+    (151,  5,  "Electric Eel"),
+    (251,  6,  "Barracuda Build"),
+    (401,  7,  "Deep-Sea Angler"),
+    (601,  8,  "Apex Mako"),
+    (801,  9,  "Shadow Kraken"),
+    (1001, 10, "Mythic Leviathan"),
+]
+
 
 def dragon_tier(total_commits: int) -> tuple[int, str, str]:
     """Return (tier, tier_name, depth_zone) for a total commit count."""
@@ -24,10 +39,10 @@ def dragon_tier(total_commits: int) -> tuple[int, str, str]:
     return tier[1], tier[2], tier[3]
 
 
-def creature_stage(repo_commits: int) -> int:
-    """Per-repo species stage: 1 (0-30), 2 (31-100), 3 (100+)."""
-    if repo_commits > 100:
-        return 3
-    if repo_commits > 30:
-        return 2
-    return 1
+def repo_tier(repo_commits: int) -> tuple[int, str]:
+    """Return (tier, creature_name) for a single repo's commit count."""
+    tier = REPO_TIERS[0]
+    for entry in REPO_TIERS:
+        if repo_commits >= entry[0]:
+            tier = entry
+    return tier[1], tier[2]

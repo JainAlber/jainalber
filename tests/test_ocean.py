@@ -1,9 +1,7 @@
 import datetime as dt
-import itertools
 import xml.etree.ElementTree as ET
 
-from ocean import detect, scene, tiers
-from ocean import species as sp
+from ocean import creatures, detect, scene, tiers
 from ocean.fetch import OceanState, RepoState
 
 
@@ -20,45 +18,22 @@ def test_dragon_tier_boundaries():
     assert tiers.dragon_tier(50000)[0] == 10
 
 
-def test_creature_stage_boundaries():
-    assert tiers.creature_stage(0) == 1
-    assert tiers.creature_stage(30) == 1
-    assert tiers.creature_stage(31) == 2
-    assert tiers.creature_stage(100) == 2
-    assert tiers.creature_stage(101) == 3
+def test_repo_tier_boundaries():
+    assert tiers.repo_tier(0) == (1, "Abyssal Fry")
+    assert tiers.repo_tier(15)[0] == 1
+    assert tiers.repo_tier(16)[0] == 2
+    assert tiers.repo_tier(80)[0] == 3
+    assert tiers.repo_tier(81)[0] == 4
+    assert tiers.repo_tier(600)[0] == 7
+    assert tiers.repo_tier(601)[0] == 8
+    assert tiers.repo_tier(1001) == (10, "Mythic Leviathan")
 
 
-# ---------------------------------------------------------------- species
-
-def test_hybrid_table_covers_all_36_pairs():
-    pairs = set(itertools.combinations(sp.CATEGORIES, 2))
-    assert len(pairs) == 36
-    for a, b in pairs:
-        name, base, overlay = sp.HYBRIDS[frozenset({a, b})]
-        assert base in (a, b) and overlay in (a, b) and base != overlay
-        assert name
-
-
-def test_resolve_pure_species_at_60_percent():
-    name, base, overlay = sp.resolve_species({sp.PYTHON: 0.7, sp.JS: 0.3})
-    assert (name, base, overlay) == ("Sea Krait", sp.PYTHON, None)
-
-
-def test_resolve_hybrid_at_dual_30_percent():
-    name, base, overlay = sp.resolve_species({sp.PYTHON: 0.45, sp.AI: 0.4, sp.CLI: 0.15})
-    assert name == "Veiled Naga Ray"
-    assert {base, overlay} == {sp.PYTHON, sp.AI}
-
-
-def test_resolve_multi_everything_is_reef_shark():
-    scores = {c: 1.0 for c in sp.CATEGORIES[:5]}
-    name, base, overlay = sp.resolve_species(scores)
-    assert name == "Reef Shark"
-    assert base == sp.MULTI and overlay is None
-
-
-def test_resolve_empty_scores_is_reef_shark():
-    assert sp.resolve_species({})[0] == "Reef Shark"
+def test_repo_ladder_has_ten_distinct_creatures():
+    assert len(tiers.REPO_TIERS) == 10
+    names = {entry[2] for entry in tiers.REPO_TIERS}
+    assert len(names) == 10
+    assert set(creatures.RENDER) == set(range(1, 11))
 
 
 # ---------------------------------------------------------------- detect
@@ -73,18 +48,27 @@ def test_requirements_deps():
     assert deps == {"torch", "flask"}
 
 
-def test_scores_blend_langs_and_deps():
-    scores = detect.category_scores(
-        {"Python": 9000, "JavaScript": 1000},
-        {"torch", "transformers"},
+def test_detected_techs_filters_and_orders():
+    langs, tools = detect.detected_techs(
+        {"Python": 9000, "JavaScript": 1000, "Markdown": 500},
+        {"torch", "react", "not-a-known-dep"},
     )
-    assert scores[sp.PYTHON] > scores[sp.JS]
-    assert scores[sp.AI] > 0
+    assert langs == ["Python", "JavaScript"]
+    assert tools == ["react", "torch"]
 
 
-def test_docker_bonus():
-    scores = detect.category_scores({}, set(), has_docker=True)
-    assert scores[sp.DEVOPS] > 0
+# ---------------------------------------------------------------- creatures
+
+def test_every_evolution_tier_renders_valid_svg():
+    for tier in range(1, 11):
+        frag = creatures.render_creature(100, 100, tier, "repo", "sub text")
+        ET.fromstring(f'<svg xmlns="http://www.w3.org/2000/svg">{frag}</svg>')
+
+
+def test_creature_patrol_animation_present():
+    frag = creatures.render_creature(0, 0, 5, "x", "y", patrol="patrolL", duration=11.5)
+    assert 'class="patrolL"' in frag
+    assert "animation-duration:11.5s" in frag
 
 
 # ---------------------------------------------------------------- scene
@@ -117,23 +101,24 @@ def test_scene_renders_valid_xml_for_every_dragon_tier():
         assert root.tag.endswith("svg")
 
 
+def test_scene_renders_valid_xml_for_every_repo_tier():
+    state = _fixture_state()
+    for commits in (0, 20, 60, 100, 200, 300, 500, 700, 900, 2000):
+        state.repos[0].commits = commits
+        root = ET.fromstring(scene.build_svg(state))
+        assert root.tag.endswith("svg")
+
+
 def test_scene_contains_repo_labels_and_cockpit():
     svg = scene.build_svg(_fixture_state())
     assert "ml-thing" in svg and "webapp" in svg and "dusty" in svg
+    assert "CORAL HUNTER" in svg      # 120 commits -> tier 4
+    assert "ABYSSAL FRY" in svg       # 8 commits -> tier 1
     assert "DSV JAIN PRASAD ALBER" in svg
     assert "183 TOTAL COMMITS" in svg
 
 
-def test_every_hybrid_renders_valid_svg():
-    """Force-render all 36 hybrids + 10 pure species at all 3 stages."""
-    from ocean import creatures
-    for pair, (name, base, overlay) in sp.HYBRIDS.items():
-        for stage in (1, 2, 3):
-            frag = creatures.render_creature(100, 100, base, overlay, stage,
-                                             40, "repo", name)
-            ET.fromstring(f'<svg xmlns="http://www.w3.org/2000/svg">{frag}</svg>')
-    for cat in sp.PURE_SPECIES:
-        for stage in (1, 2, 3):
-            frag = creatures.render_creature(100, 100, cat, None, stage,
-                                             40, "repo", "x")
-            ET.fromstring(f'<svg xmlns="http://www.w3.org/2000/svg">{frag}</svg>')
+def test_scene_has_horizontal_patrol_keyframes():
+    svg = scene.build_svg(_fixture_state())
+    assert "@keyframes patrolM" in svg and "translateX" in svg
+    assert "dswim" in svg             # the dragon patrols too

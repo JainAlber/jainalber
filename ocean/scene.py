@@ -4,12 +4,10 @@ Wide 16:9-ish canvas — jellyfish strip up top, dragon center stage,
 cockpit resting on the seafloor, repo creatures patrolling both flanks.
 """
 
-import math
 import random
 
 from . import cockpit, creatures, dragon, jellyfish
 from . import palette as P
-from . import species as sp
 from . import tiers
 
 W, H = 1400, 790
@@ -17,22 +15,26 @@ MAX_REPOS = 10
 
 STYLE = f"""
   text {{ font-family: {P.MONO}; }}
-  .lbl   {{ font-size: 12px; fill: {P.TEXT}; letter-spacing: 1px; }}
-  .sub   {{ font-size: 9px;  fill: {P.TEXT_DIM}; letter-spacing: 1px; }}
-  .jlbl  {{ font-size: 10px; fill: {P.TEXT}; letter-spacing: 1px; }}
-  .plate {{ font-size: 17px; fill: {P.PEARL}; letter-spacing: 4px; font-weight: bold; }}
-  .platesub {{ font-size: 9px; fill: {P.TEXT_DIM}; letter-spacing: 2px; }}
-  .zone  {{ font-size: 11px; letter-spacing: 2px; }}
-  .gval  {{ font-size: 15px; font-weight: bold; }}
-  .glbl  {{ font-size: 8px; fill: {P.TEXT_DIM}; letter-spacing: 1.5px; }}
-  .stamp {{ font-size: 8px; fill: {P.TEXT_DIM}; letter-spacing: 1px; }}
-  .caption {{ font-size: 11px; fill: {P.TEXT_DIM}; letter-spacing: 5px; }}
-  .dlabel  {{ font-size: 13px; fill: {P.TEXT}; letter-spacing: 3px; }}
-  .dsub    {{ font-size: 10px; fill: {P.TEXT_DIM}; letter-spacing: 2px; }}
+  .lbl   {{ font-size: 16px; fill: {P.TEXT}; letter-spacing: 1px; font-weight: bold; }}
+  .sub   {{ font-size: 11px; fill: {P.TEXT_DIM}; letter-spacing: 1px; }}
+  .jlbl  {{ font-size: 12px; fill: {P.TEXT}; letter-spacing: 1px; }}
+  .plate {{ font-size: 21px; fill: {P.PEARL}; letter-spacing: 4px; font-weight: bold; }}
+  .platesub {{ font-size: 11px; fill: {P.TEXT_DIM}; letter-spacing: 2px; }}
+  .zone  {{ font-size: 13px; letter-spacing: 2px; font-weight: bold; }}
+  .gval  {{ font-size: 18px; font-weight: bold; }}
+  .glbl  {{ font-size: 10px; fill: {P.TEXT_DIM}; letter-spacing: 1.5px; }}
+  .stamp {{ font-size: 10px; fill: {P.TEXT_DIM}; letter-spacing: 1px; }}
+  .caption {{ font-size: 14px; fill: {P.TEXT}; letter-spacing: 6px; }}
+  .dlabel  {{ font-size: 18px; fill: {P.TEXT}; letter-spacing: 4px; font-weight: bold; }}
+  .dsub    {{ font-size: 12px; fill: {P.TEXT_DIM}; letter-spacing: 2px; }}
 
   .swim        {{ animation: swim 8s ease-in-out infinite; }}
   .drift       {{ animation: drift 7s ease-in-out infinite; }}
   .dragonfloat {{ animation: dfloat 11s ease-in-out infinite; }}
+  .dragonswim  {{ animation: dswim 26s ease-in-out infinite alternate; }}
+  .patrolS     {{ animation: patrolS 12s ease-in-out infinite alternate; }}
+  .patrolM     {{ animation: patrolM 12s ease-in-out infinite alternate; }}
+  .patrolL     {{ animation: patrolL 12s ease-in-out infinite alternate; }}
   .sway        {{ animation: sway 4.5s ease-in-out infinite; transform-origin: 0 0; }}
   .pulse       {{ animation: pulse 4s ease-in-out infinite; }}
   .jpulse      {{ animation: jpulse 3.8s ease-in-out infinite; transform-origin: 0 0; }}
@@ -42,6 +44,8 @@ STYLE = f"""
   .ray         {{ animation: raypulse 11s ease-in-out infinite; }}
   .halopulse   {{ animation: halopulse 9s ease-in-out infinite; }}
   .snow        {{ animation: snowdrift 17s ease-in-out infinite alternate; }}
+  .current     {{ animation: currentflow 1.6s linear infinite; }}
+  .current2    {{ animation: currentflow 2.4s linear infinite reverse; }}
 
   @keyframes swim {{
     0%, 100% {{ transform: translate(0, 0) rotate(0deg); }}
@@ -49,6 +53,11 @@ STYLE = f"""
     55%      {{ transform: translate(20px, 2px) rotate(-1.2deg); }}
     80%      {{ transform: translate(7px, 7px) rotate(0.7deg); }}
   }}
+  @keyframes patrolS {{ from {{ transform: translateX(-55px); }}  to {{ transform: translateX(55px); }} }}
+  @keyframes patrolM {{ from {{ transform: translateX(-85px); }}  to {{ transform: translateX(85px); }} }}
+  @keyframes patrolL {{ from {{ transform: translateX(-120px); }} to {{ transform: translateX(120px); }} }}
+  @keyframes dswim   {{ from {{ transform: translateX(-45px); }}  to {{ transform: translateX(45px); }} }}
+  @keyframes currentflow {{ from {{ stroke-dashoffset: 0; }} to {{ stroke-dashoffset: -54; }} }}
   @keyframes drift {{
     0%, 100% {{ transform: translate(0, 0); }}
     33%      {{ transform: translate(-7px, -13px); }}
@@ -161,20 +170,20 @@ def _repo_creatures(state) -> str:
     if not repos:
         return ""
     out = ""
-    y0, y1 = 248, 690
+    y0, y1 = 252, 686
+    patrols = ("patrolM", "patrolL", "patrolS")
     for i, repo in enumerate(repos):
         t = i / max(len(repos) - 1, 1)
         y = y0 + (y1 - y0) * t
-        x = 160 if i % 2 == 0 else W - 160
+        x = 175 if i % 2 == 0 else W - 175
         facing = 1 if i % 2 == 0 else -1
-        stage = tiers.creature_stage(repo.commits)
-        name, base, overlay = sp.resolve_species(repo.scores)
-        size = 34 + stage * 9
-        label = repo.name if len(repo.name) <= 24 else repo.name[:22] + "…"
-        sub = f"{name} · st{stage} · {repo.commits} commits"
-        out += creatures.render_creature(x, y, base, overlay, stage, size,
-                                         label, sub, facing=facing,
-                                         delay=i * 0.9)
+        tier_r, tname = tiers.repo_tier(repo.commits)
+        label = repo.name if len(repo.name) <= 22 else repo.name[:20] + "…"
+        sub = f"{tname.upper()} · T{tier_r} · {repo.commits} COMMITS"
+        out += creatures.render_creature(x, y, tier_r, label, sub,
+                                         facing=facing, delay=i * 1.7,
+                                         patrol=patrols[i % 3],
+                                         duration=9.0 + (i * 2.3) % 8)
     return out
 
 
@@ -191,7 +200,7 @@ def build_svg(state) -> str:
         f'<text x="{W / 2}" y="42" class="caption" text-anchor="middle">T H E   L I V I N G   D E E P</text>',
         jellyfish.render_field(state.lang_age, state.tool_age, W, 88),
         f'<ellipse cx="{W / 2}" cy="{dragon_y}" rx="430" ry="165" fill="url(#dragonHalo)" class="halopulse"/>',
-        dragon.render_dragon(W / 2, dragon_y, state.total_commits, tier),
+        f'<g class="dragonswim">{dragon.render_dragon(W / 2, dragon_y, state.total_commits, tier)}</g>',
         f'<text x="{W / 2}" y="{dragon_y + 158}" class="dlabel" text-anchor="middle">{tier_name.upper()}</text>',
         f'<text x="{W / 2}" y="{dragon_y + 176}" class="dsub" text-anchor="middle">'
         f'TIER {tier}/10 · {state.total_commits} TOTAL COMMITS</text>',

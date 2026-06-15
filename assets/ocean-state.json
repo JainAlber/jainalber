@@ -1,37 +1,63 @@
 {
-  "generated": "2026-06-14T03:36:00.337123+00:00",
+  "generated": "2026-06-15T18:52:35.516139+00:00",
   "total_commits": 59,
   "streak": 0,
   "open_prs": 1,
   "lang_age": {
-    "Python": 2,
-    "JavaScript": 17,
-    "CSS": 17
+    "JavaScript": 0,
+    "Dockerfile": 0,
+    "CSS": 0,
+    "Python": 1
   },
   "tool_age": {
-    "requests": 2,
-    "next": 17,
-    "react": 17,
-    "react-dom": 17,
-    "tailwindcss": 17,
-    "rich": 18,
-    "beautifulsoup4": 39,
-    "fastapi": 55,
-    "httpx": 55,
-    "matplotlib": 55,
-    "numpy": 55,
-    "pandas": 55,
-    "plotly": 55,
-    "scikit-learn": 55,
-    "seaborn": 55,
-    "streamlit": 55,
-    "uvicorn": 55,
-    "xgboost": 55
+    "eslint": 0,
+    "next": 0,
+    "react": 0,
+    "react-dom": 0,
+    "tailwindcss": 0,
+    "requests": 1,
+    "rich": 19,
+    "beautifulsoup4": 40,
+    "fastapi": 56,
+    "httpx": 56,
+    "matplotlib": 56,
+    "numpy": 56,
+    "pandas": 56,
+    "plotly": 56,
+    "scikit-learn": 56,
+    "seaborn": 56,
+    "streamlit": 56,
+    "uvicorn": 56,
+    "xgboost": 56
   },
   "repos": [
     {
+      "name": "newsly",
+      "pushed_at": "2026-06-15T18:43:29+00:00",
+      "commits": 0,
+      "languages": {
+        "JavaScript": 10537,
+        "Dockerfile": 1142,
+        "CSS": 59
+      },
+      "deps": [
+        "autoprefixer",
+        "eslint",
+        "eslint-config-next",
+        "groq-sdk",
+        "next",
+        "node",
+        "postcss",
+        "react",
+        "react-dom",
+        "rss-parser",
+        "tailwindcss"
+      ],
+      "has_docker": true
+    },
+    {
       "name": "ocean-asset",
-      "pushed_at": "2026-06-11T22:39:29+00:00",
+      "pushed_at": "2026-06-14T03:36:10+00:00",
       "commits": 0,
       "languages": {},
       "deps": [],
@@ -39,33 +65,13 @@
     },
     {
       "name": "jainalber",
-      "pushed_at": "2026-06-11T22:39:27+00:00",
+      "pushed_at": "2026-06-14T03:36:08+00:00",
       "commits": 30,
       "languages": {
         "Python": 66100
       },
       "deps": [
         "requests"
-      ],
-      "has_docker": false
-    },
-    {
-      "name": "newsly",
-      "pushed_at": "2026-05-27T10:08:58+00:00",
-      "commits": 0,
-      "languages": {
-        "JavaScript": 7885,
-        "CSS": 59
-      },
-      "deps": [
-        "autoprefixer",
-        "groq-sdk",
-        "next",
-        "postcss",
-        "react",
-        "react-dom",
-        "rss-parser",
-        "tailwindcss"
       ],
       "has_docker": false
     },
